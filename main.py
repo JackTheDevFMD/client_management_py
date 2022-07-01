@@ -331,7 +331,7 @@ class customerPanel(tk.Frame):
 
         if userID != None:
 
-            self.display_name = tk.Label(self, text="Total spent: "+df2['Purchase Amount'][userID], bg=BACKGROUND_COLOUR, fg=TEXT_COLOUR).pack()
+            self.display_name = tk.Label(self, text="Total spent: £"+str(df2['Purchase Amount'][userID]), bg=BACKGROUND_COLOUR, fg=TEXT_COLOUR).pack()
             self.customerLevel = tk.Label(self, text="Customer Level: "+df2['Customer Level'][userID], bg=BACKGROUND_COLOUR, fg=TEXT_COLOUR).pack()
             self.ProductsPurchased = tk.Label(self, text="Products purchased: ", bg=BACKGROUND_COLOUR, fg=TEXT_COLOUR).pack()
 
